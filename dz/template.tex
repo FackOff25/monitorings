@@ -27,7 +27,7 @@
 "Механизмами" в данном случае выступают врачи и младший медицинский персонал.
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/as-is_context.png}
+  \includegraphics[width=1\linewidth]{extra/as-is_context.png}
   \captionof{figure}{Контекстная диаграмма as-is, A-0}
   \label{fig:prplot}
 \end{center}
@@ -36,8 +36,8 @@
 \subsubsection{A0}
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/as-is_A0.png}
-  \captionof{figure}{Контекстная диаграмма as-is, A0}
+  \includegraphics[width=1\linewidth]{extra/as-is_A0.png}
+  \captionof{figure}{Декомпозиция блока A0, as-is}
   \label{fig:prplot}
 \end{center}
 Уровень А0 делится на 3 уровня:
@@ -50,21 +50,22 @@
 \subsubsection{A1}
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/as-is_A1.png}
-  \captionof{figure}{Контекстная диаграмма as-is, A1}
+  \includegraphics[width=1\linewidth]{extra/as-is_A1.png}
+  \captionof{figure}{Декомпозиция блока A1, as-is}
   \label{fig:prplot}
 \end{center}
-Уровень А1 делится на 2 уровня:
+Уровень А1 делится на 3 уровня:
 \begin{enumerate}
   \item Опрос больного. Медработникам нужно узнать от пациента зацепки для будущего диагноза и осмотра критических мест.
   \item Осмотр больного. Медработникам нужно осмотреть пациента для получения достоверной информации о его состоянии.
+  \item Уточняющий опрос. Медработникам нужно уточнить у пациента данные, полученные при осмотре.
 \end{enumerate}
 %-----------------
 \subsubsection{A2}
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/as-is_A2.png}
-  \captionof{figure}{Контекстная диаграмма as-is, A2}
+  \includegraphics[width=1\linewidth]{extra/as-is_A2.png}
+  \captionof{figure}{Декомпозиция блока A2, as-is}
   \label{fig:prplot}
 \end{center}
 Уровень А2 делится на 3 уровня:
@@ -77,8 +78,8 @@
 \subsubsection{A3}
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/as-is_A3.png}
-  \captionof{figure}{Контекстная диаграмма as-is, A3}
+  \includegraphics[width=1\linewidth]{extra/as-is_A3.png}
+  \captionof{figure}{Декомпозиция блока A3, as-is}
   \label{fig:prplot}
 \end{center}
 Уровень А3 делится на 3 уровня:
@@ -93,7 +94,7 @@
 Таким образом в системе появляется новые управляющие данные - записи о прошлых больных и новый механизм - система сравнения пациентов.
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/to-be_context.png}
+  \includegraphics[width=1\linewidth]{extra/to-be_context.png}
   \captionof{figure}{Контекстная диаграмма to-be, A-0}
   \label{fig:prplot}
 \end{center}
@@ -102,8 +103,8 @@
 \subsubsection{A0}
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/to-be_A0.png}
-  \captionof{figure}{Контекстная диаграмма to-be, A0}
+  \includegraphics[width=1\linewidth]{extra/to-be_A0.png}
+  \captionof{figure}{Декомпозиция блока A0, to-be}
   \label{fig:prplot}
 \end{center}
 На уровне A0 добавились введённые выше управляюшие данные и механизм, они все воздействуют на уровень A2.
@@ -111,8 +112,8 @@
 \subsubsection{A2}
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/to-be_A2.png}
-  \captionof{figure}{Контекстная диаграмма to-be, A2}
+  \includegraphics[width=1\linewidth]{extra/to-be_A2.png}
+  \captionof{figure}{Декомпозиция блока A2, to-be}
   \label{fig:prplot}
 \end{center}
 На уровне A2 добавились введённые выше управляюшие данные и механизм, а также новый блок сравнения с прошлыми случаями, который встал параллельно с блоком сравнения с известными болезнями.
@@ -120,14 +121,15 @@
 \subsubsection{A23}
 \begin{center}
   \centering
-  \includegraphics[width=.7\linewidth]{extra/to-be_A23.png}
-  \captionof{figure}{Контекстная диаграмма to-be, A23}
+  \includegraphics[width=1\linewidth]{extra/to-be_A23.png}
+  \captionof{figure}{Декомпозиция блока A23, to-be}
   \label{fig:prplot}
 \end{center}
-Уровень А23 делится на 2 уровня:
+Уровень А23 делится на 3 уровня:
 \begin{enumerate}
   \item Отбор прошлых пациентв со схожими симптомами. Так как нет смысла сравнивать нынешнего пациента с не имеющими с ним ничего общего случаями, они отсеиваются.
   \item Отбор пациентов со схожими историями болезни. Для большей схожести следует отобрать случаи, которые ещё и по истории болезни схожи с данным пациентом.
+  \item Анализ остальных обстоятельств. Требуется принять во внимание аллергии и прочие обстоятельства при сравнении пациентов.
 \end{enumerate}
 \newpage
 %---------------------------------------------------------

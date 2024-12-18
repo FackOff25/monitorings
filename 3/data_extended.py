@@ -1,5 +1,5 @@
 C=1
-B=3
+B=1
 lambdas = [1,1,1]
 
 Base = [
