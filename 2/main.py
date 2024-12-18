@@ -1,11 +1,12 @@
 import numpy as np
-import data_original as data
+import data as data
 from bayes import NaiveBayesG
 
 Data = np.array([np.array(d[0]) for d in data.Data])
 Classes = np.array([d[1] for d in data.Data])
 
-train = [0,1,2,4,8,9,10,12]
+train = [0,1,2,4,
+         8,9,10,12]
 test = list(range(len(Data)))
 for i in train:
     test.remove(i)
